@@ -5,7 +5,7 @@ var updateCallback = function(data){
     var line = value[value.length -1];
     console.log("line : "+line);
     var movieName = line.text;
-	if (line.source.toLowerCase()==="visitor"){
+    if (line.source.toLowerCase()==="visitor"){
     var url = "https://www.omdbapi.com?t="+movieName+"&apikey=a656c2b2";
     
    
@@ -20,9 +20,6 @@ var updateCallback = function(data){
     document.getElementById("Year").innerHTML = res.Year;
     document.getElementById("Genre").innerHTML = res.Genre;
     document.getElementById("Plot").innerHTML = res.Plot;
-	document.getElementById("Plot").innerHTML = res.Plot;
-    document.getElementById("Director").innerHTML = res.Director;
-    document.getElementById("Poster").innerHTML = res.Poster;
     
     
     
